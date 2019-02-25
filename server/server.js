@@ -16,12 +16,20 @@ let User = mongoose.model("user", new mongoose.Schema({
 
 //根据定义的数据模型生成数据【开始】
 // User.create({
-//     user: 'react',
-//     age: 3
+//     user: 'react3',
+//     age: 33
 // }, function (err, response) {
 //     console.log('mongoodb Data::::', response);
 // })
 //根据定义的数据模型生成数据【结束】
+
+//删除数据【开始】
+// User.remove({
+//     user: 'react',
+// }, function (err, response) {
+//     console.log('mongoodb Data::::', response);
+// })
+// //删除数据【结束】
 let app = express();
 
 app.get('/',function(require, response){
@@ -31,7 +39,7 @@ app.get('/',function(require, response){
 app.get('/data', function (require, response) {
     // response.json({name: 'react', type: 'It'})
     User.find({}, function(err, doc){
-        response.json(doc)
+        response.json(doc);
     })
 });
 
