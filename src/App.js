@@ -14,7 +14,7 @@ class App extends Component {
         console.log('App:comDIdMOunt')
         axios.get('/data')
             .then(function(response){
-            console.log('data:::', response);
+            console.log('data》》》', response);
         })
     }
 
