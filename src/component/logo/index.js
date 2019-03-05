@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import loginImg from '../../img/job.jpg';
 
 class Logo extends Component{
     constructor(props){
@@ -9,8 +9,8 @@ class Logo extends Component{
 
     render(){
         return (
-            <div>
-                Logo
+            <div style={{textAlign: 'center', margin: '10px 0 20px 0'}}>
+                <img src={loginImg} alt="" style={{width: '98vw'}}/>
             </div>
         )
     }
