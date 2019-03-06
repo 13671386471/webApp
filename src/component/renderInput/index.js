@@ -6,7 +6,7 @@
 import React, {Component} from 'react';
 import {List, InputItem, WingBlank, WhiteSpace,Radio} from 'antd-mobile'
 
-class Test extends React.Component {
+class RenderInput extends React.Component {
     constructor(props){
         super(props);
     }
@@ -48,4 +48,4 @@ class Test extends React.Component {
         </div>);
     }
 }
-export default Test;
+export default RenderInput;
