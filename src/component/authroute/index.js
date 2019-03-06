@@ -16,11 +16,11 @@ class AuthRoute extends Component{
         //用户是否完善信息
         const pubList = ['/login', '/register'];
         const pathname = this.props.location.pathname;
-        if(pubList.includes(pathname)){
+        if(pubList.includes(pathname)){//如果已经是注册或登录页面了就不要在跳转了
             return;
         }
 
-        axios.get('/user/info')
+        axios.get('/user/info')//如果不是在注册或登录页面，就要请求用户状态
             .then( (res) => {
                 console.log('reres:', res);
                 if(res.status == 200){

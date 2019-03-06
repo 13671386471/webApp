@@ -8,7 +8,7 @@ import store from './redux/store';
 import Login from './container/login';
 import Register from './container/register';
 import AuthRoute from './component/authroute';
-
+import Test from './component/renderInput'
 console.log('login:::', Login)
 ReactDOM.render(
     (<Provider store={store}>
@@ -18,6 +18,7 @@ ReactDOM.render(
                 <AuthRoute></AuthRoute>
                 <Route path='/login' component={Login}/>
                 <Route path='/register' component={Register}/>
+                <Route path='/test' component={Test}/>
             </div>
         </BrowserRouter>
     </Provider>),
