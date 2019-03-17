@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 import {WingBlank, WhiteSpace, Button} from 'antd-mobile'
 import Logo from '../../component/logo';
 import RenderInput from '../../component/renderInput';
+
+import {register} from '../../redux/actions/userAction';
 
 class Register extends Component{
     constructor(props){
@@ -32,7 +35,7 @@ class Register extends Component{
         console.log('click::', this.state)
     }
     render(){
-        console.log('field::', this.fields)
+        console.log('field::', this.fields, this.props);
         return (
             <div>
                 <Logo />
